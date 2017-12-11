@@ -1,0 +1,398 @@
+<html>
+<head>
+  <title>FCC Projects Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  
+<style>
+
+img {
+  display: block;
+  max-width: 25%;
+}
+body {
+      position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+  margin: 0 auto;  
+  }
+.nav {
+  font-family: sans-serif;
+ /* margin-left:-15px;
+  padding:0;*/
+}
+.navbar > * {
+  background-color: #fffaf0;
+   color: black;
+  margin-left:-15px;
+  margin-right: -10px;
+}
+.nav-tabs > li {
+  float: right;
+  margin-bottom: -1px;
+  background-color: black;
+}
+.navbar .nav > li > a{
+  text-shadow: green 0.1em 0.1em 0.1em;
+}
+.navbar .nav > li> a active {
+  background-color: white;
+}
+.nav-text visted{
+
+font-weight: bold;
+ color: white; 
+  text-shadow: white 0.1em 0.1em 0.1em;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: black !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: white !important;
+}
+
+ul.nav li.active a {
+    color: white !important;
+}
+
+.overlay {
+ 
+  color:white;
+  position:absolute;
+  z-index:50;
+  top:2px;
+  left:20px;
+  width:50px;
+  text-align:center;
+  
+}
+
+.overlay-nav {
+  background: black;
+   opacity: 0.3;
+   z-index:500;
+}
+
+#About {
+padding-top: 100px;
+display: table;
+height: 440px;
+}
+
+#Portfolio {
+padding-top:40px;
+ /* padding-right: 50px;
+  padding-left: 250px;
+height: 2520px; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+ width: 80%;
+justify-content:center; 
+-webkit-align-content: space-around;
+  
+  align-content: space-around;  
+ 
+ 
+}
+ 
+#Contact {padding-top:10px;height:330px; background-color: white;
+  font-color: white!important;
+ }
+
+#footer-well {padding-top:20px;height:330px;color: #fff; background-color: white; color: white;
+  padding-bottom: 10px;
+}
+.contact-text     {
+  color: white !important;  
+}
+
+.footer-text {
+font-weight: bold;
+ color: black; 
+  text-shadow: gray 0.1em 0.1em 0.1em;
+}
+
+.leftHalf{ left: 10%; width: 50%; float: left}
+.rightHalf{ left: 30%; width: 50%; float: right }
+
+
+.parallax {
+  background: url("https://gist.githubusercontent.com/greaneym/d9db5a35ebf4ebb56b619d109e4111d3/raw/001af08858ef50527e307b7cda4ea207567dde6e/arb6.png"); 
+
+    min-height: 55px; 
+    background-attachment: fixed; 
+    background-position: center;
+    /*background-repeat: repeat;*/
+    background-size: 80%;
+    z-index: 50;
+   
+                
+}
+.parallax2 {  
+ background-image: url("https://gist.githubusercontent.com/greaneym/d9db5a35ebf4ebb56b619d109e4111d3/raw/64fe6406947856cf53e67a90853ad9ae97b84c89/arb3.png" ); /*alt="Morton Arboretum" target="_blank");*/
+     background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 50;
+    opacity: 0.7;
+}
+
+.parallax3 {
+    background-image: url("https://gist.githubusercontent.com/greaneym/d9db5a35ebf4ebb56b619d109e4111d3/raw/64fe6406947856cf53e67a90853ad9ae97b84c89/arb5.png"); 
+  
+    z-index: 50;
+    opacity: 0.7;
+    min-height: 300px; 
+     background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 50;
+}
+
+.textdiv {
+height:100px;
+opacity: 0.5; 
+background-color:green;
+font-size:36px">
+}
+
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.thumbnail {
+width: 250px;
+    height: 200px;
+    display: inline-block; /* makes it fit in like an <img> */
+    background-size: cover; /* or contain */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.panel {
+display: table;
+opacity: 0.5;
+}
+
+.panel-text {
+color: black;
+opacity: 1.0;
+z-index: 50;
+}
+.panel-footer.panel-custom > a {
+    background: white;
+    color: black;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+  <body   data-https://gist.githubusercontent.com/greaneym/d9db5a35ebf4ebb56b619d109e4111d3/raw/64fe6406947856cf53e67a90853ad9ae97b84c89/arb3.png
+target=".navbar" data-offset="20">                                                                
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div  class="parallax">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse">
+          <span class="icon-bar"></span><span class="icon-bar"></span>
+          <span class="icon-bar "></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand nav-right nav-text overlay" href="#">M.Greaney</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse pull-right" >
+        <ul class="nav navbar-nav parallax "> 
+   
+          <li class="nav-item active"></li>
+          <li ><a href="#About">ABOUT</a></li>
+          <li><a href="#Portfolio">PORTFOLIO</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+          
+            </ul>
+          
+ 
+      </div>
+    </div>
+  </div>
+</nav>    
+    <div class="parallax2">
+<div id="About" class="container-fluid">
+      <div class="row">
+      <div class=" col-med-8">
+            <div class="panel panel-default">
+          <div class="panel-body text-vcenter panel-text">
+<h3><p> Front End Developer, Data Visualizer, Data Wrangler, </p><p>with experience in JavaScript libraries and frameworks, </p><p>data manipulation with Python and Pandas,</p></p> continuous learning in JavaScript.<p></h3>
+  <h3> Web Developer - JavaScript Generalist </h3>
+  <h3> Front End - D3.js, Angular.js, React.js, Crossfilter.js </h3>
+  <h3> Back End - Python, Node.js</h3>
+     </div>
+        </div>
+        </div>
+           </div>
+                     </div> <!-- end About --> 
+           </div>
+
+<div id="Portfolio" class="container-fluid ">
+  <h2 class="pull-center">PORTFOLIO</h2></div>
+      <div id="Portfolio" class="row display-flex ">
+           <div id='project21' class="col-sm-6 col-xs-12 leftHalf">
+            <a href="https://codepen.io/greaney/pen/LjjNgN" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/101a6b9047d055fb8b86bf27c8a2c27a518ba88b/meteorite1.png?raw=true" alt="Meteorite Strikes" target="blank">Mapping Meteorite Strikes with D3.JS</a>
+        </div>
+
+<div id='project20' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/pen/oeBgXj" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/101a6b9047d055fb8b86bf27c8a2c27a518ba88b/forceflag.png?raw=true" alt="Force Directive Data" target="blank">World Flags and Force with D3.JS</a>
+</div>   
+
+<div id='project19' class="col-sm-6 col-xs-12 leftHalf">
+<a href="codepen.io/greaney/pen/xLGdBq" class="thumbnail">Land Surface Temperatures with D3.JS
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/101a6b9047d055fb8b86bf27c8a2c27a518ba88b/heat1.png?raw=true" alt="Heatmap" target="blank"></a>
+</div>   
+
+ <div id='project18' class="col-sm-6 col-xs-12 rightHalf">
+<a href="http://bl.ocks.org/greaneym/9e143318d54563be664c923a036faee9" class="thumbnail">
+<img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/1723d9639f09fea7b92036649620ab6724bfb483/scatbike.png?raw=true" alt=" scatter plot" target="_blank">Scatter Plot using D3.JS</a>
+</div>
+
+ <div id='project17' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://bl.ocks.org/greaneym/b4a14400fbbef96464929465ed97b5fc" class="thumbnail">
+<img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/1723d9639f09fea7b92036649620ab6724bfb483/barchartd3.png?raw=true" alt="Bar Graph" target="_blank"> BarChart with D3.JS</a>
+</div>
+
+ <div id='project16' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://bl.ocks.org/greaneym/e6cc5c6dfb0f84d47af5276e0fc626f9" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/pomodoro.png?raw=true" alt="Pomodoro Timer" target="blank">Pomodoro Timer using D3.JS</a>
+</div>     
+
+ <div id='project15' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://codepen.io/greaney/pen/VWboKQ" class="thumbnail">Simon Game with D3.js
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/simon.png?raw=true" alt="Simon Game" target="blank"></a>
+</div>
+
+<div id='project14' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/pen/KyKddw" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/4967b76c2ed88038e8cba65ba5e37162d32423ab/conway2.png?raw=true" alt="Simon Game" target="blank">Conway's Game of Life with D3.JS and React.JS</a>
+</div>   
+<br>
+
+<div id='project13' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://bl.ocks.org/greaneym/fad9cbdb56af9d9b48467d22a7e587e0" class="thumbnail">Roguelike Game with React.JS
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/4967b76c2ed88038e8cba65ba5e37162d32423ab/rreact1.png?raw=true" alt="Roguelike Game" target="blank"></a>
+</div>   
+
+ <div id='project12' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/full/WZbYwZ" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/630ad277ebbf08892416bf53bfde9e88ad45758d/leaderboard.png?raw=true" alt="Leaderboard of Camp Progammers" target="blank">FCC Camp Leaderboard with React.JS</a>
+</div>   
+
+ <div id='project11' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://codepen.io/greaney/pen/XaQYxN" class="thumbnail">Markdown with React.JS <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/4967b76c2ed88038e8cba65ba5e37162d32423ab/markdown.png?raw=true" alt="Markdown" target="blank"></a>
+</div>  
+
+ <div id='project10' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/pen/BpwGaB" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/twitchapp.png?raw=true" alt="Twitch TV Guide" target="blank">Twitch TV App Program Guide </a>
+</div>
+
+ <div id='project9' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://codepen.io/greaney/pen/LWoJvw" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/3d7550c1b712b0addbe56e1f4ed234cc54116189/ttt.png?raw=true" alt="TicTacToe Game" target="blank">TICTACTOE Game</a>
+</div>
+
+ <div id='project8' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/pen/XpawBg" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/wiki2.png?raw=true" alt="Wiki Tool" target="blank">Wikipedia Search Tool </a>
+</div>
+
+ <div id='project7' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://codepen.io/greaney/pen/mREgBP" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/profile.png?raw=true" height=105px; width=105px; alt="Random Quotations Bostock" target="blank">Random Quotations of Mike Bostock about Programming </a>
+                      </div>
+
+ <div id='project6' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://codepen.io/greaney/pen/WpOLdw" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/perlinsnap.png?raw=true" height=105px; width=225px; alt="Perlin Noise" target="blank">Perlin Noise Experiment </a>
+                       </div>
+
+ <div id='project5' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://codepen.io/greaney/pen/zZzyGz" class="thumbnail">
+ <img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/calculator.png?raw=true" height=175px; width=175px; alt="jQuery Calculator " target="blank">jQuery Calculator </a>
+  </div>
+
+ <div id='project4' class="col-sm-6 col-xs-12 rightHalf">
+ <a href="https://codepen.io/greaney/pen/bBQKMo" class="thumbnail">Jane Austen Tribute 
+<img src="https://gist.github.com/greaneym/15d8e91b19474f03fc6e2da00c567c5f/raw/a3793ffff7ad57c8e030d0a8550dd4bf7d3fbca0/austen_tribute.png?raw=true" height="250px" width="200px"  alt="Jane Austen Tribute Page" target="blank"></a>
+</div>
+
+ <div id='project3' class="col-sm-6 col-xs-12 leftHalf">
+<a href="https://bl.ocks.org/greaneym/c58c0f08a8be9a74a44e" class="thumbnail">
+<img src="https://github.com/greaneym/ghsnaps/blob/master/ex1.png?raw=true" alt="Example One AngularJS" target="_blank">Using Angular.JS with D3.JS Example One</a>
+</div>
+
+ <div id='project2' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://bl.ocks.org/greaneym/ad04044573b61dfc0cca" class="thumbnail">Using Angular.JS with D3.JS Example Two
+<img src="https://github.com/greaneym/ghsnaps/blob/master/ex2.png?raw=true" alt="Example Two AngularJS" target="_blank"></a>
+</div>
+
+ <div id='project1' class="col-sm-6 col-xs-12 rightHalf">
+<a href="https://bl.ocks.org/greaneym/51c08fbdf2b61c5c5645f84e625728de" class="thumbnail"> 2016 Peace Corps with D3.JS and DC.JS and Crossfilter.JS <img src="https://github.com/greaneym/ghsnaps/blob/master/peace_corps.png?raw=true" alt="Peace Corps Rankings" target="blank"></a>
+</div>
+
+</div>
+</div> <!-- end Portfolio container-fluid -->
+
+<hr>
+<div id="Contact" class="container-fluid contact-text">
+    <div class="parallax3">
+<h3>Name  <span class="rightHalf"><h3 class=" pull-right contact-text">Contact</h3></span></h3>
+
+<img  src="https://avatars2.githubusercontent.com/u/1949826?v=3&s=460" height="80px" width="80px" target="_blank" class="pull-left img-circle"  alt="Photo of M.Greaney"><h3>Margaret Greaney</h3></a> 
+  <span class="rightHalf"><h3 class="contact-text pull-right">greaneym@gmail.com</h3></span>
+<br>
+<br>
+<div>
+<p class="contact-text"> <a class="contact-text"href="https://www.freecodecamp.org/greaneym/front-end-certification"><h3 class="contact-text">Front End Certificate </h3></a></p>
+ <p class="contact-text"><a class="contact-text" href="https://www.freecodecamp.org/greaneym/data-visualization-certification"><h3 class="contact-text"> Data Visualization Certificate</h3></a></p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<footer  class='panel-text'>
+<div class="footer-well panel-text">
+<p class="pull-right"><a class="panel-text" href="#About">Back to top</a></p>
+<p class="panel-text">MGreaney &copy; 2017 <a class="panel-text" href="http://www.bootstrap.com" target="_blank">Made with Bootstrap</a>
+  <ul>
+  <a class="pull-center" href="https://www.linkedin.com/in/margaret-greaney-3b86092"> <img src="https://content.linkedin.com/content/dam/brand/site/img/logo/logo-tm.png" target="_blank" height="10%" width="10%" class="pull-left"  alt="linkedIn logo"> </a>
+ 
+  <a href="https://github.com/greaneym"> <img class='pull-left' src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="5%" width="5%" alt="gitub_logo" target="_blank" ></a></div>
+   </ul>
+	</footer> 
+
+</div>
+</body>
+</html>
+
